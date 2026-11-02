@@ -1,0 +1,107 @@
+@media(max-width:1000px){
+  .app-shell{grid-template-columns:200px minmax(0,1fr)}
+  .sidebar{padding-inline:12px}
+  .hero-sticker{right:7%;width:145px;height:145px}
+  .hero-sticker span{font-size:30px}
+  .hero-sticker b{font-size:14px}
+  .story-card{grid-template-columns:160px 1fr}
+  .time-card{grid-template-columns:.8fr 1.3fr}
+  .time-info{padding:24px 22px}
+  .colors-card{grid-template-columns:1fr}
+  .stats-grid{grid-template-columns:repeat(2,minmax(0,1fr))}
+}
+@media(max-width:720px){
+  body{background:var(--bg);padding-bottom:64px}
+  .app-shell{display:block}
+  .sidebar{display:none}
+  .main-content{background:linear-gradient(180deg,#221d38 0,#17151f 300px,#121212 650px)}
+  .topbar{height:60px;padding:0 17px}
+
+  .hero{min-height:540px;padding:43px 22px 66px;align-items:flex-start}
+  .hero-content{max-width:100%;padding-top:12px}
+  .hero h1{font-size:clamp(39px,11vw,58px);letter-spacing:-2px}
+  .hero-description{max-width:340px;font-size:13px}
+  .hero-sticker{width:112px;height:112px;right:18px;top:auto;bottom:34px;transform:rotate(9deg)}
+  .hero-sticker span{font-size:23px;letter-spacing:-1px}
+  .hero-sticker b{font-size:11px;margin-top:3px}
+  .hero-sticker small{font-size:9px;margin-top:6px;padding:2px 8px}
+  .hero:after{width:180px;height:180px;right:0;top:auto;bottom:20px}
+
+  .content-section{padding:36px 16px 5px}
+  .section-heading{margin-bottom:17px}
+  .section-heading h2{font-size:23px}
+  .section-subtitle{font-size:11px;line-height:1.5}
+  .section-symbol{font-size:23px}
+  .sub-heading{margin-top:34px}
+
+  .story-card{grid-template-columns:1fr}
+  .story-date{flex-direction:row;flex-wrap:wrap;justify-content:center;align-items:baseline;gap:6px 10px;padding:18px 14px}
+  .story-date small{width:100%;text-align:center}
+  .story-date strong{font-size:44px;letter-spacing:-2px}
+  .story-date b{margin:0 0 0 4px}
+  .story-text{padding:22px 20px}
+  .story-text p:first-child{font-size:16px}
+  .chip{padding:10px 14px}
+
+  .time-card{grid-template-columns:1fr}
+  .time-photo{min-height:230px}
+  .rings-art{width:62%}
+  .time-photo:before{width:205px;height:205px}
+  .time-photo:after{width:165px;height:165px}
+  .time-info{padding:24px 20px}
+  .time-info h3{font-size:20px}
+  .time-grid{gap:15px 8px}
+  .time-unit strong{font-size:29px}
+
+  .music-feature{grid-template-columns:92px minmax(0,1fr);gap:14px;padding:12px}
+  .album-art{max-width:92px;padding:10px}
+  .cover-label{font-size:13px}
+  .cover-heart{font-size:31px}
+  .track-details .eyebrow{font-size:7px;letter-spacing:1px}
+  .track-details h3{font-size:16px}
+  .track-artist{margin-bottom:12px;font-size:11px}
+  .track-controls{gap:8px}
+  .play-button{width:32px;height:32px;font-size:11px}
+  .track-meta{font-size:9px}
+  .track-duration{display:none}
+  .colors-card{padding:20px 16px;gap:22px}
+  .gradient-bar{height:84px}
+  .gradient-legend strong{font-size:13px}
+  .gradient-legend span{font-size:10px}
+
+  .stats-grid{gap:9px}
+  .stat-card{min-height:150px;padding:13px}
+  .stat-card strong{font-size:28px}
+  .stat-card p{font-size:10px;line-height:1.4}
+  .stat-foot{font-size:9px;line-height:1.4}
+
+  .album-toolbar .button{padding:0 14px}
+  .album-grid{grid-template-columns:repeat(auto-fill,minmax(105px,1fr));gap:8px}
+  .slide{min-height:330px;padding:28px 22px 52px}
+  .carousel-arrow{width:36px;height:36px;font-size:24px}
+  .carousel-arrow.prev{left:8px}.carousel-arrow.next{right:8px}
+
+  .letter-section{margin:36px 15px 0;padding:39px 17px 35px}
+  .letter-section h2{font-size:30px}
+  .letter-decoration{font-size:48px}
+  .decoration-left{left:10px;top:12px}
+  .decoration-right{right:10px;bottom:10px;font-size:60px}
+  .letter-paper{padding:22px 20px}
+  .letter-paper p{font-size:13px}
+  .footer{padding:28px 15px 24px}
+
+  .bottom-nav{display:grid;grid-template-columns:repeat(6,1fr);position:fixed;left:0;right:0;bottom:0;z-index:20;background:#0a0a0af2;backdrop-filter:blur(14px);border-top:1px solid #ffffff10;padding:6px 4px calc(6px + env(safe-area-inset-bottom))}
+  .bottom-nav a{display:flex;flex-direction:column;align-items:center;gap:1px;font-size:9px;font-weight:700;color:#999;padding:4px 0}
+  .bottom-nav a span{font-size:19px;line-height:1.1}
+  .bottom-nav a.active{color:#fff}
+  .bottom-nav a.active span{color:var(--accent-soft)}
+  .toast{bottom:76px}
+}
+@media(max-width:370px){
+  .hero{padding-inline:17px}
+  .hero-sticker{width:88px;height:88px;right:13px}
+  .hero-sticker span{font-size:18px}
+  .hero h1{font-size:36px}
+  .time-unit strong{font-size:25px}
+  .stats-grid{grid-template-columns:1fr}
+}

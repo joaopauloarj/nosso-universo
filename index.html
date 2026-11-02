@@ -1,0 +1,287 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#121212">
+  <meta name="description" content="Uma retrospectiva da nossa história.">
+  <title>Nosso Universo ♡</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/responsive.css">
+  <link rel="stylesheet" href="css/animations.css">
+</head>
+<body>
+  <div class="app-shell">
+    <aside class="sidebar" aria-label="Navegação principal">
+      <a class="brand" href="#inicio" aria-label="Nosso Universo, início">
+        <span class="brand-mark">♡</span><span>nosso universo</span>
+      </a>
+      <nav class="side-nav">
+        <a class="nav-link active" href="#inicio" data-target="inicio"><span class="nav-icon">⌂</span> Início</a>
+        <a class="nav-link" href="#tempo" data-target="tempo"><span class="nav-icon">◷</span> Nosso tempo</a>
+        <a class="nav-link" href="#musicas" data-target="musicas"><span class="nav-icon">♫</span> Músicas e cores</a>
+        <a class="nav-link" href="#numeros" data-target="numeros"><span class="nav-icon">∞</span> Números</a>
+        <!-- <a class="nav-link" href="#album" data-target="album"><span class="nav-icon">▧</span> Nosso álbum</a> -->
+        <a class="nav-link" href="#carta" data-target="carta"><span class="nav-icon">✉</span> Uma carta</a>
+      </nav>
+    </aside>
+
+    <main class="main-content">
+      <header class="topbar">
+        <div class="history-buttons">
+          <button class="circle-button" id="backButton" aria-label="Voltar" title="Voltar">‹</button>
+          <button class="circle-button" id="forwardButton" aria-label="Avançar" title="Avançar">›</button>
+        </div>
+        <p class="chapter-now" id="chapterNow" aria-live="polite"></p>
+      </header>
+
+      <!-- ============ CAPÍTULO 1 ============ -->
+      <div class="chapter section-anchor" id="inicio" data-chapter data-label="Capítulo 1">
+        <section class="hero" aria-labelledby="heroTitle">
+          <div class="hero-overlay"></div>
+          <div class="hero-content reveal">
+            <p class="eyebrow"><span class="live-dot"></span> CAPÍTULO 1 · APRESENTAÇÃO</p>
+            <p class="hero-kicker" id="heroKicker"></p>
+            <h1 id="heroTitle"></h1>
+            <p class="hero-description" id="heroText"></p>
+            <div class="hero-actions">
+              <a class="button button-light" href="#historia"><span class="play-small">▶</span> Começar nossa história</a>
+              <a class="button button-glass" href="#tempo">Nossa jornada <span>↘</span></a>
+            </div>
+          </div>
+          <div class="hero-sticker" aria-hidden="true"><span id="stickerDate"></span><b id="stickerYear"></b><small id="stickerTime"></small></div>
+        </section>
+
+        <section class="content-section section-anchor" id="historia">
+          <div class="section-heading">
+            <div><p class="eyebrow muted">NOSSA HISTÓRIA</p><h2>Como tudo <span>começou.</span></h2></div>
+            <span class="section-symbol">✦</span>
+          </div>
+          <div class="story-card">
+            <div class="story-date" aria-label="Data do início">
+              <small id="storyWeekday"></small>
+              <strong id="storyDay"></strong>
+              <span id="storyMonth"></span>
+              <b id="storyTime"></b>
+            </div>
+            <div class="story-text" id="storyText"></div>
+          </div>
+
+          <div class="interest" id="interest">
+            <p class="eyebrow muted">O QUE VOCÊ QUER VER AGORA?</p>
+            <div class="chips">
+              <a class="chip chip-blue" href="#tempo"><span>◷</span> Quanto tempo já vivemos</a>
+              <a class="chip chip-purple" href="#musicas"><span>♫</span> Nossas músicas</a>
+              <a class="chip chip-red" href="#cores"><span>◉</span> Nossas cores</a>
+              <a class="chip chip-blue" href="#numeros"><span>∞</span> Nossos números</a>
+              <!-- <a class="chip chip-purple" href="#album"><span>▧</span> Nosso álbum</a> -->
+              <!-- <a class="chip chip-red" href="#momentos"><span>✦</span> Melhores momentos</a> -->
+              <a class="chip chip-blue" href="#carta"><span>✉</span> Minha cartinha</a>
+            </div>
+          </div>
+        </section>
+      </div>
+
+      <!-- ============ CAPÍTULO 2 ============ -->
+      <section class="content-section section-anchor" id="tempo" data-chapter data-label="Capítulo 2">
+        <div class="section-heading">
+          <div><p class="eyebrow muted">CAPÍTULO 2</p><h2>O tempo voa. <span>Nosso amor fica.</span></h2></div>
+          <span class="section-symbol">◷</span>
+        </div>
+        <div class="time-card">
+          <div class="time-photo" id="ringsFrame">
+            <svg class="rings-art" viewBox="0 0 200 140" aria-hidden="true">
+              <defs>
+                <linearGradient id="ringBlue" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#7fa6ff"/><stop offset="1" stop-color="#2d56d6"/></linearGradient>
+                <linearGradient id="ringRed" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#ff8a9d"/><stop offset="1" stop-color="#d12a49"/></linearGradient>
+              </defs>
+              <circle cx="78" cy="72" r="38" fill="none" stroke="url(#ringBlue)" stroke-width="9"/>
+              <circle cx="122" cy="72" r="38" fill="none" stroke="url(#ringRed)" stroke-width="9"/>
+              <path d="M100 38.6a38 38 0 0 1 0 66.8a38 38 0 0 1 0-66.8z" fill="none" stroke="#a66bff" stroke-width="9"/>
+            </svg>
+            <img class="rings-photo" id="ringsPhoto" alt="Nossas alianças" hidden>
+            <div class="photo-caption"><span class="caption-dot"></span> Nossas alianças</div>
+            <button class="photo-change" id="ringsChange" type="button" aria-label="Trocar foto das alianças" title="Trocar foto">📷</button>
+            <input type="file" id="ringsInput" accept="image/*" hidden>
+          </div>
+          <div class="time-info">
+            <p class="eyebrow accent-text">NOSSA CONTAGEM</p>
+            <h3>Desde que o “nós” começou.</h3>
+            <div class="time-grid" aria-live="off">
+              <div class="time-unit"><strong id="years">0</strong><span>anos</span></div>
+              <div class="time-unit"><strong id="months">0</strong><span>meses</span></div>
+              <div class="time-unit"><strong id="days">0</strong><span>dias</span></div>
+              <div class="time-unit"><strong id="hours">00</strong><span>horas</span></div>
+              <div class="time-unit"><strong id="minutes">00</strong><span>minutos</span></div>
+              <div class="time-unit"><strong id="seconds">00</strong><span>segundos</span></div>
+            </div>
+            <p class="since-line">Desde <strong id="startDateLabel"></strong> <span>♡</span></p>
+          </div>
+        </div>
+      </section>
+
+      <!-- ============ CAPÍTULO 3 ============ -->
+      <section class="content-section section-anchor" id="musicas" data-chapter data-label="Capítulo 3">
+        <div class="section-heading">
+          <div><p class="eyebrow muted">CAPÍTULO 3</p><h2>Nossas músicas <span>e nossas cores.</span></h2></div>
+          <span class="section-symbol">♫</span>
+        </div>
+
+        <div class="music-feature track" data-index="0">
+          <div class="album-art album-one"><span class="cover-label">A NOSSA<br>CANÇÃO</span><span class="cover-heart">♡</span></div>
+          <div class="track-details">
+            <p class="eyebrow">purple - Olívia Rodrigo</p>
+            <h3 class="track-title"></h3><p class="track-artist"></p>
+            <div class="track-controls">
+              <button class="play-button" aria-label="Reproduzir ou pausar">▶</button>
+              <div class="track-meta"><span class="track-status"></span><div class="progress-track"><div class="progress-fill"></div></div></div>
+              <span class="track-duration">--:--</span>
+            </div>
+            <audio preload="metadata"></audio>
+          </div>
+        </div>
+        <div class="music-feature track second-track" data-index="1">
+          <div class="album-art album-two"><span class="cover-label">SÓ<br>NÓS DOIS</span><span class="cover-heart">♥</span></div>
+          <div class="track-details">
+            <p class="eyebrow">O Amor Coloriu - Luan Santana</p>
+            <h3 class="track-title"></h3><p class="track-artist"></p>
+            <div class="track-controls">
+              <button class="play-button" aria-label="Reproduzir ou pausar">▶</button>
+              <div class="track-meta"><span class="track-status"></span><div class="progress-track"><div class="progress-fill"></div></div></div>
+              <span class="track-duration">--:--</span>
+            </div>
+            <audio preload="metadata"></audio>
+          </div>
+        </div>
+
+        <div class="sub-heading section-anchor" id="cores">
+          <p class="eyebrow muted">NOSSAS CORES FAVORITAS</p>
+          <h3>Ela é azul. Eu sou vermelho. <span>Juntos, somos roxo.</span></h3>
+        </div>
+        <div class="colors-card">
+          <div class="venn">
+            <svg viewBox="0 0 330 200" role="img" aria-label="Um círculo azul e um vermelho que se encontram formando roxo">
+              <defs>
+                <radialGradient id="gBlue" cx="35%" cy="30%" r="80%"><stop offset="0" stop-color="#6c93ff"/><stop offset="1" stop-color="#2447c9"/></radialGradient>
+                <radialGradient id="gRed" cx="65%" cy="30%" r="80%"><stop offset="0" stop-color="#ff7a90"/><stop offset="1" stop-color="#cc2547"/></radialGradient>
+                <linearGradient id="gPurple" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#b57bff"/><stop offset="1" stop-color="#7a3df0"/></linearGradient>
+                <clipPath id="clipBlue"><circle cx="130" cy="100" r="86"/></clipPath>
+              </defs>
+              <circle cx="130" cy="100" r="86" fill="url(#gBlue)"/>
+              <circle cx="200" cy="100" r="86" fill="url(#gRed)"/>
+              <circle cx="200" cy="100" r="86" fill="url(#gPurple)" clip-path="url(#clipBlue)"/>
+              <text x="88" y="106" text-anchor="middle" class="venn-label">azul</text>
+              <text x="165" y="106" text-anchor="middle" class="venn-label">roxo</text>
+              <text x="244" y="106" text-anchor="middle" class="venn-label">vermelho</text>
+            </svg>
+          </div>
+          <div class="gradient-side">
+            <div class="gradient-bar" role="img" aria-label="Degradê do azul ao vermelho passando pelo roxo"></div>
+            <div class="gradient-legend">
+              <div><i class="dot dot-blue"></i><strong>Azul</strong><span>a cor dela</span></div>
+              <div><i class="dot dot-purple"></i><strong>Roxo</strong><span>a cor de nós dois</span></div>
+              <div><i class="dot dot-red"></i><strong>Vermelho</strong><span>a minha cor</span></div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ============ CAPÍTULO 4 ============ -->
+      <section class="content-section section-anchor" id="numeros" data-chapter data-label="Capítulo 4">
+        <div class="section-heading">
+          <div><p class="eyebrow muted">CAPÍTULO 4</p><h2>Alguns números. <span>Um sentimento gigante.</span></h2></div>
+          <span class="section-symbol">∞</span>
+        </div>
+        <div class="stats-grid">
+          <article class="stat-card stat-blue"><span class="stat-icon">♡</span><p>Minha pessoa favorita</p><strong>1 <small>só você</small></strong><span class="stat-foot">Não existe replay melhor.</span></article>
+          <article class="stat-card stat-purple"><span class="stat-icon">♫</span><p>Trilha sonora oficial</p><strong>2 <small>canções</small></strong><span class="stat-foot">E mil lembranças em cada uma.</span></article>
+          <article class="stat-card stat-red"><span class="stat-icon">✦</span><p>Momentos para lembrar</p><strong>3 <small>memórias</small></strong><span class="stat-foot">E ainda tem tanta coisa por vir.</span></article>
+          <article class="stat-card stat-mix"><span class="stat-icon">∞</span><p>Vontade de ficar</p><strong>∞ <small>vezes</small></strong><span class="stat-foot">Hoje, amanhã e depois.</span></article>
+        </div>
+      </section>
+
+      <!-- ============ CAPÍTULO 5 ============ -->
+      <!-- <section class="content-section section-anchor" id="album" data-chapter data-label="Capítulo 5">
+        <div class="section-heading">
+          <div><p class="eyebrow muted">CAPÍTULO 5</p><h2>Nosso álbum. <span>Nossos melhores momentos.</span></h2></div>
+          <span class="section-symbol">▧</span>
+        </div>
+
+        <div class="album-toolbar">
+          <div><h3>Nosso álbum</h3><p id="albumCount"></p></div>
+          <button class="button button-light" id="uploadButton" type="button"><span>＋</span> Adicionar fotos</button>
+          <input type="file" id="uploadInput" accept="image/*" multiple hidden>
+        </div>
+        <div class="album-grid" id="albumGrid" aria-live="polite"></div>
+
+        <div class="sub-heading section-anchor" id="momentos">
+          <p class="eyebrow muted">NOSSOS MELHORES MOMENTOS</p>
+          <h3>Pequenos momentos, <span>grandes lembranças.</span></h3>
+        </div>
+        <div class="carousel" id="carousel">
+          <div class="carousel-track" id="carouselTrack" tabindex="0" aria-label="Melhores momentos"></div>
+          <button class="carousel-arrow prev" id="carouselPrev" aria-label="Anterior">‹</button>
+          <button class="carousel-arrow next" id="carouselNext" aria-label="Próximo">›</button>
+          <div class="carousel-dots" id="carouselDots"></div>
+        </div>
+      </section> -->
+
+      <!-- ============ ÚLTIMO CAPÍTULO ============ -->
+      <section class="letter-section section-anchor" id="carta" data-chapter data-label="Capítulo final">
+        <div class="letter-decoration decoration-left">✳</div><div class="letter-decoration decoration-right">♡</div>
+        <p class="eyebrow">CAPÍTULO FINAL</p>
+        <h2>Tem uma coisa<br>que eu quero te dizer…</h2>
+        <p class="letter-intro">E talvez nenhuma playlist do mundo consiga explicar tudo.</p>
+
+        <div class="envelope" id="envelope" aria-hidden="true">
+          <div class="env-back"></div>
+          <div class="env-paper"></div>
+          <div class="env-front"></div>
+          <div class="env-flap"></div>
+          <span class="env-seal">♡</span>
+        </div>
+
+        <button class="button button-light letter-button" id="openLetter" type="button" aria-expanded="false">Abrir minha cartinha <span>♡</span></button>
+        <div class="letter-reveal" id="letterReveal" hidden>
+          <div class="letter-paper">
+            <span class="letter-top-heart">♡</span>
+            <h3 id="letterGreeting"></h3>
+            <p id="letterText"></p>
+            <p class="letter-signature">Com todo o meu amor, <span id="letterSign"></span></p>
+          </div>
+        </div>
+      </section>
+
+      <footer class="footer">
+        <div class="footer-brand">♡ <span>nosso universo</span></div>
+        <span class="footer-date" id="footerDate"></span>
+      </footer>
+    </main>
+  </div>
+
+  <nav class="bottom-nav" aria-label="Navegação">
+    <a href="#inicio" data-target="inicio"><span>⌂</span>Início</a>
+    <a href="#tempo" data-target="tempo"><span>◷</span>Tempo</a>
+    <a href="#musicas" data-target="musicas"><span>♫</span>Músicas</a>
+    <a href="#numeros" data-target="numeros"><span>∞</span>Números</a>
+    <a href="#album" data-target="album"><span>▧</span>Álbum</a>
+    <a href="#carta" data-target="carta"><span>✉</span>Carta</a>
+  </nav>
+
+  <div class="lightbox" id="lightbox" hidden>
+    <button class="lightbox-close" id="lightboxClose" aria-label="Fechar">×</button>
+    <img id="lightboxImg" alt="">
+  </div>
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+  <script src="js/config.js"></script>
+  <script src="js/main.js"></script>
+  <script src="js/counter.js"></script>
+  <script src="js/music-player.js"></script>
+  <script src="js/album.js"></script>
+  <script src="js/carousel.js"></script>
+</body>
+</html>
